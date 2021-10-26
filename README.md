@@ -19,7 +19,7 @@ See [steps](https://prnt.sc/1xf84cv)
 ## Usage
 
 ```javascript
-const PteroNodes = require("pteronodes")
+const PteroNodes = require("ptero-nodes")
 
 const Nodes = new PteroNodes.Nodes({
     panel: 'link of your pterodactyl panel',
