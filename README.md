@@ -32,8 +32,6 @@ const Nodes = new PteroNodes.Nodes({
     debug: true // Optional,
 });
 
-const PteroNodes = require("pteronodes")
-
 // Get all nodes
 Nodes.getAllNodes()
 // Get node by id
