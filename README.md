@@ -29,13 +29,21 @@ const Nodes = new PteroNodes.Nodes({
     panel: 'link of your pterodactyl panel',
     api_key: 'your application key',
     interval: 5000 // Optional (1000 = 1s),
-    debug: true // Optional
+    debug: true // Optional,
 });
+
+const PteroNodes = require("pteronodes")
 
 // Get all nodes
 Nodes.getAllNodes()
+// Get node by id
+Nodes.getNodeById(1)
 // Get node by name
 Nodes.getNodeByName("node name")
+// Get node status by id
+Nodes.getNodeStatusById(1)
+// Get node status by name
+Nodes.getNodeStatusByName("node name")
 ```
 
 ## Contributing
