@@ -11,6 +11,8 @@ npm install ptero-nodes
 ```
 
 ## Notice
+If you have a question or if you encounter any bugs, help is available on [our Discord](https://discord.swizen.eu)
+
 When creating your application key make sure you have set the necessary permissions to read the nodes
 
 See [steps](https://prnt.sc/1xf84cv)
@@ -19,8 +21,10 @@ See [steps](https://prnt.sc/1xf84cv)
 ## Usage
 
 ```javascript
+// Import package
 const PteroNodes = require("ptero-nodes")
 
+// Init nodes
 const Nodes = new PteroNodes.Nodes({
     panel: 'link of your pterodactyl panel',
     api_key: 'your application key',
@@ -28,6 +32,10 @@ const Nodes = new PteroNodes.Nodes({
     debug: true // Optional
 });
 
+// Get all nodes
+Nodes.getAllNodes()
+// Get node by name
+Nodes.getNodeByName("node name")
 ```
 
 ## Contributing
